@@ -5,16 +5,16 @@ Course: Computer Architecture &emsp; &emsp; Instructor: Prof. P. R. Panda
 ## Problem Statement:
 **Write a MIPS Assembly Program for evaluating an expression in postfix format.**  
 **Input**: Postfix expression with constant integer operands in the range 0-9 and operators +, -,
-and *.  
+and \*.  
 The postfix expression can be accepted as a string input to the assembly program at run time.  
-Example: “325*+” (without the quotes).  
+Example: “325\*+” (without the quotes).  
   
 Example execution for the above expression, using a stack structure:  
 - 3 \-> push onto the stack. Stack contents: 3
 - 2 \-> push onto the stack. Stack contents: 3 2
 - 5 \-> push onto the stack. Stack contents: 3 2 5
-- * \-> pop the top 2 stack elements, perform the multiplication, then push the result onto the stack. Stack contents: 3 10
-- + \-> pop the top 2 stack elements, perform the addition, then push the result onto the stack. Stack contents: 13
+- \* \-> pop the top 2 stack elements, perform the multiplication, then push the result onto the stack. Stack contents: 3 10
+- \+ \-> pop the top 2 stack elements, perform the addition, then push the result onto the stack. Stack contents: 13
   
 **Output**: Print the result of the expression.  
   
