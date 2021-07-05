@@ -48,11 +48,11 @@ The MIPS default stack is used for computations in this algorithm. As each chara
 1. Read the first (next) character.
 2. If it is a number, push it onto the stack.
 3. If it is an operator symbol:  
-&emsp;<ul type="a">
+&emsp;<ol type="a">
     <li>&emsp;Pop the two topmost elements of the stack.</li>
       <li>&emsp;Perform the operation corresponding to this symbol.</li>
   <li>&emsp;Push the result of the operation back onto the top of the stack.</li>
-    </ul>
+    </ol>
 4. Repeat steps 1 to 3 till all characters are read and then pop the topmost element as the result.
 
 The relevant errors are handled appropriately. Errors are flagged in step 1 if the input expression has symbols other than numbers and the +, - and * operators. Errors are flagged in step 3.a if the input expression is mismatched such that there are more operators than the operands allow. Errors are flagged in step 4 if the input expression is mismatched such that there are more operands than the operators require (after the last pop, the stack is not empty).
